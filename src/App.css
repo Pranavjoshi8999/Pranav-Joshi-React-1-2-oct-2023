@@ -1,9 +1,9 @@
-/* src/App.css */
+
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    background-color: black; /* Set the background color to black */
-    color: white; /* Set the text color to white */
+    background-color: black; 
+    color: white;
     margin: 0;
     padding: 0;
   }
@@ -28,13 +28,10 @@ body {
     color: #FF4F4F;
   }
   
-  /* CSS for the Counter App title */
 
-  
-  /* CSS for the Count Text */
   p {
-    font-weight: 700; /* Bold font weight */
-    text-decoration: underline; /* Underline */
+    font-weight: 700; 
+    text-decoration: underline;
     margin-top: 10px;
   }
   
@@ -50,7 +47,7 @@ body {
     font-family:'Inter', sans-serif; 
     font-weight: 300;
     cursor: pointer;
-    height: 56px; /* Button height */
+    height: 56px; 
     width: 226px;
   }
 .go{
@@ -66,7 +63,7 @@ body {
     margin-left: 20px;
   }
   
-  /* Media queries for responsiveness */
+  
   @media (max-width: 768px) {
     .counter-container {
       max-width: 250px;

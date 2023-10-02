@@ -1,4 +1,3 @@
-// src/Counter.js
 import React, { useState, useEffect } from 'react';
 
 
@@ -10,29 +9,28 @@ const ErrorMessage = ({ message }) => {
 
 const Counter = () => {
   const [count, setCount] = useState(0);
-  const [error, setError] = useState(null); // State to store error message
-
+  const [error, setError] = useState(null); 
   useEffect(() => {
     console.log(`Count changed: ${count}`);
   }, [count]);
 
   const increment = () => {
     setCount(count + 1);
-    setError(null); // Clear any previous errors
+    setError(null); 
   };
 
   const decrement = () => {
     if (count > 0) {
       setCount(count - 1);
-      setError(null); // Clear any previous errors
+      setError(null);
     } else {
-      setError("Error:Cannot go below 0."); // Set error message
+      setError("Error:Cannot go below 0."); 
     }
   };
 
   const reset = () => {
     setCount(0);
-    setError(null); // Clear any previous errors
+    setError(null);
   };
 
   return (
@@ -40,11 +38,10 @@ const Counter = () => {
       <h1>Counter using React</h1>
       
       <p className='count-class'>Your current count is : {count}</p>
-      {error && <ErrorMessage message={error} />} {/* Display error message if present */}
+      {error && <ErrorMessage message={error} />} 
       <div className="button-container">
         <button onClick={decrement}>Decrement</button>
         <button onClick={increment}>Increment</button>
-        {/* <button onClick={()=>{setCount(0)}}>Decrement</button> */}
         {count > 10 && (
           <button className='go' onClick={reset}>GO BACK TO 0</button>
         )}
