@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* src/App.css */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+    margin: 0;
+    padding: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+  
   }
-  to {
-    transform: rotate(360deg);
+  .count-class{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
   }
+  .error-message{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-decoration: none;
+    color: #FF4F4F;
+  }
+  
+  /* CSS for the Counter App title */
+
+  
+  /* CSS for the Count Text */
+  p {
+    font-weight: 700; /* Bold font weight */
+    text-decoration: underline; /* Underline */
+    margin-top: 10px;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+   
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family:'Inter', sans-serif; 
+    font-weight: 300;
+    cursor: pointer;
+    height: 56px; /* Button height */
+    width: 226px;
+  }
+.go{
+  color: #fff;
+  background-color: black;
+  border: 1px solid #fff;
 }
+  
+  button:disabled {
+    cursor: not-allowed;
+  }
+  .counter-container{
+    margin-left: 20px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .counter-container {
+      max-width: 250px;
+    }
+  }
+  
